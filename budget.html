@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>BUDGET SYSTEM</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+ <div class="contanier-fluid " id="body">
+  <div class="text-center my-2 fs-3 fw-bold ">BUDGET SYSTEM</div>
+  <div class="row">
+   <div class="col-lg-5 col-11 mx-auto" id="firstDiv">
+
+   </div>
+   <div class="col-lg-5 col-11 mx-auto m-sm-2 my-3" id="group" >
+    <div class="alert alert-danger  text-center" id="err" style="display: none;"> The space is empty</div>
+    <div class="row">
+     <div class="col-6 mx-auto " id="first">
+      <p id="ALL">NAME VERIFY</p>
+      <input type="text" class="form-control-sm my-1" placeholder="Enter name" required id="childName" autofocus >
+        <P id="ALL">BAGS</P>
+      <input type="number" class="form-control-sm my-1" placeholder="input amount" required id="bags">
+      <P id="ALL">FOOD</P>
+      <input type="number" class="form-control-sm my-1" placeholder="input amount" required id="food">
+      <P id="ALL">TRANSPORT</P>
+      <input type="number" class="form-control-sm my-1" placeholder="input amount" required id="transport">
+     </div>
+      <div id="second" class="col-6 mx-auto ">
+        <P id="ALL">DATE</P>
+        <input type="date" class="form-control-sm my-1" placeholder="Enter Date" required id="date" >
+        <p id="ALL">MEDICARE</p>
+        <input type="number" class="form-control-sm my-1" placeholder="input amount" required id="medicare" >
+        <P id="ALL">CLOTH</P>
+        <input type="number" class="form-control-sm my-1" placeholder="input amount" required id="cloth" >
+        <P id="ALL">OTHER EXPENSES</P>
+        <input type="number" class="form-control-sm my-1" placeholder="input amount" required id="otherExpenses" >
+      </div>
+    </div>
+
+     <button id="button" class="btn btn-dark col-sm-10 col-6 mx-auto my-3" onclick="amount()">TOTAL AMOUNT</button>
+     <div id="answer" class="my-3 p-4">
+      <p class="show.Div" id="intro"></p>
+      <p class="show.Div" id="note"></p>
+      <p class="show.Div" id="result"></p>
+
+      <div id="balance"> ACCOUNT BALANCE
+        <p id="remain" >$500000</p>
+      </div>
+        
+     </div>
+     
+   </div>
+   
+  </div>
+
+ </div>
+
+
+
+
+
+
+
+ <script src="script.js"></script>
+</body>
+</html>
